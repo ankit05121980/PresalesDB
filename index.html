@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proposal Builder App — Power Apps Presales Solution</title>
+  <meta name="description" content="A Power Apps model-driven application that streamlines presales proposal management and project estimation." />
+  <style>
+    :root {
+      --ink: #14213d;
+      --muted: #5a6478;
+      --paper: #f7f5f0;
+      --card: #ffffff;
+      --accent: #c2410c;
+      --accent-soft: #fde7d9;
+      --line: #e3ded3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      color: var(--ink);
+      background: var(--paper);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); }
+    .wrap { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    header.hero {
+      padding: 88px 0 64px;
+      border-bottom: 1px solid var(--line);
+    }
+    .eyebrow {
+      display: inline-block;
+      font-size: 0.8rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-soft);
+      padding: 4px 12px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    h1 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      line-height: 1.1;
+      margin: 20px 0 16px;
+      max-width: 16ch;
+    }
+    .lead { font-size: 1.2rem; color: var(--muted); max-width: 60ch; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 32px; }
+    .btn {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+      border: 2px solid var(--ink);
+      color: var(--ink);
+    }
+    .btn.primary { background: var(--ink); color: #fff; }
+    .btn:hover { transform: translateY(-1px); }
+    section { padding: 64px 0; border-bottom: 1px solid var(--line); }
+    h2 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 2rem;
+      margin: 0 0 28px;
+    }
+    .grid { display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      padding: 24px;
+    }
+    .card h3 { margin: 0 0 8px; font-size: 1.1rem; }
+    .card p { margin: 0; color: var(--muted); }
+    .shots { display: grid; gap: 28px; grid-template-columns: repeat(auto-fit, minmax(420px, 1fr)); }
+    @media (max-width: 500px) { .shots { grid-template-columns: 1fr; } }
+    figure { margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: 12px; overflow: hidden; }
+    figure img { width: 100%; display: block; border-bottom: 1px solid var(--line); }
+    figcaption { padding: 14px 18px; font-weight: 600; }
+    ol.steps { padding-left: 1.2rem; max-width: 70ch; }
+    ol.steps li { margin-bottom: 10px; }
+    ul.files { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+    ul.files li a {
+      display: flex; justify-content: space-between; gap: 16px;
+      background: var(--card); border: 1px solid var(--line); border-radius: 10px;
+      padding: 16px 20px; text-decoration: none; color: var(--ink); font-weight: 600;
+    }
+    ul.files li a span { color: var(--muted); font-weight: 400; }
+    footer { padding: 40px 0; color: var(--muted); font-size: 0.9rem; }
+    footer a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <span class="eyebrow">Power Apps · Dynamics 365</span>
+      <h1>Proposal Builder App</h1>
+      <p class="lead">
+        A Power Apps model-driven application that streamlines the presales process, from proposal
+        management to project estimation. Sales teams, presales consultants and project managers
+        can create, track and refine proposals together.
+      </p>
+      <div class="actions">
+        <a class="btn primary" href="solution/ProposalBuilderSolution.zip" download>Download solution</a>
+        <a class="btn" href="https://www.youtube.com/watch?v=vxkuD9e37pQ&amp;list=PLQblSszTOxyzEw0DfkDgI9j_incp4lSYr&amp;index=1" target="_blank" rel="noopener">Watch the overview</a>
+        <a class="btn" href="https://github.com/ankit05121980/PresalesDB" target="_blank" rel="noopener">View on GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <h2>Key features</h2>
+      <div class="grid">
+        <div class="card"><h3>Proposal management dashboard</h3><p>All active proposals in one view, with status tracking and visual funnels.</p></div>
+        <div class="card"><h3>Guided proposal creation</h3><p>Step-by-step workflows that keep proposals consistent and professional.</p></div>
+        <div class="card"><h3>Estimation management</h3><p>Pre-built templates for accurate project estimates that you can adapt to your workflows.</p></div>
+        <div class="card"><h3>Version control</h3><p>Clone and refine estimations as requirements change.</p></div>
+        <div class="card"><h3>Advanced reporting</h3><p>Dashboards for progress, milestones and success metrics.</p></div>
+        <div class="card"><h3>Collaboration</h3><p>Works with Dynamics 365 Sales to give one connected presales experience.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Screenshots</h2>
+      <div class="shots">
+        <figure><img src="screenshots/ProposalManagerDashboard.png" alt="Proposal Manager Dashboard" loading="lazy" /><figcaption>Proposal Manager Dashboard</figcaption></figure>
+        <figure><img src="screenshots/ProposalForm.png" alt="Proposal Form" loading="lazy" /><figcaption>Proposal Form</figcaption></figure>
+        <figure><img src="screenshots/EstimationTemplateForm.png" alt="Estimation Template Form" loading="lazy" /><figcaption>Estimation Template Form</figcaption></figure>
+        <figure><img src="screenshots/EstimationFormVersioning.png" alt="Estimation Form Versioning" loading="lazy" /><figcaption>Estimation Form Versioning</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Getting started</h2>
+      <ol class="steps">
+        <li><strong>Download</strong> the managed solution file below.</li>
+        <li>Open the <a href="https://make.powerapps.com/" target="_blank" rel="noopener">Power Apps Maker Portal</a>, go to <strong>Solutions → Import Solution</strong>, and select the <code>.zip</code> file.</li>
+        <li>Click <strong>Publish All Customizations</strong> when the import is complete.</li>
+        <li>Assign the <strong>Proposal Builder User</strong> security role and configure workflows and estimation templates.</li>
+        <li>Optionally, import the sample data (Technologies → Phases → Sub Phases → Estimation Factors → Estimations → Estimation Details).</li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Downloads &amp; documentation</h2>
+      <ul class="files">
+        <li><a href="solution/ProposalBuilderSolution.zip" download>Proposal Builder managed solution <span>ZIP · 707 KB</span></a></li>
+        <li><a href="sample%20data/ProposalBuilderApp%20Sample%20Data.zip" download>Sample data <span>ZIP · 70 KB</span></a></li>
+        <li><a href="documentation/Proposal_Builder_Key_Usage.pdf" target="_blank" rel="noopener">Key usage guide <span>PDF · 592 KB</span></a></li>
+        <li><a href="documentation/Proposal_User_Journey.pdf" target="_blank" rel="noopener">Proposal user journey <span>PDF · 943 KB</span></a></li>
+        <li><a href="documentation/Proposal%20Journey%20User%20Documentation%20Screenshots.pdf" target="_blank" rel="noopener">User documentation with screenshots <span>PDF · 6.7 MB</span></a></li>
+        <li><a href="https://www.youtube.com/watch?v=Vq67J4PyJxE&amp;list=PLQblSszTOxyzEw0DfkDgI9j_incp4lSYr&amp;index=2" target="_blank" rel="noopener">Full video walkthrough <span>YouTube</span></a></li>
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="wrap">
+      Proposal Builder App · Released under the MIT License ·
+      <a href="https://github.com/ankit05121980/PresalesDB/blob/main/PRIVACY_POLICY.md" target="_blank" rel="noopener">Privacy Policy</a> ·
+      <a href="https://github.com/ankit05121980/PresalesDB/blob/main/TERMS_OF_USE.md" target="_blank" rel="noopener">Terms of Use</a>
+    </div>
+  </footer>
+</body>
+</html>
